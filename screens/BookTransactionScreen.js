@@ -7,14 +7,14 @@ export default class TransactionScreen extends React.Component {
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
           <Text
           style={styles.text}
-          >Insta</Text>
+          >Facebook</Text>
         </View>
       );
     }
   }
   const styles = StyleSheet.create({
     text: {
-       color:'red',
+       color:'purple',
        fontSize:18,
        fontFamily:'algerian',
     }
