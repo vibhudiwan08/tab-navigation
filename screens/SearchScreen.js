@@ -7,15 +7,14 @@ export default class Searchscreen extends React.Component {
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',color:'red' }}>
           <Text
           style={styles.text}
-          >Face
-          book</Text>
+          >Instagram</Text>
         </View>
       );
     }
   }
   const styles = StyleSheet.create({
     text: {
-       color:'red',
+       color:'purple',
        fontSize:18,
        fontFamily:'algerian',
     }
