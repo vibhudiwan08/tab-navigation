@@ -10,14 +10,15 @@ import { Header } from 'react-native-elements';
 
 export default class App extends React.Component {
   render() {
-    return (<SafeAreaProvider>
-      <Header 
-            backgroundColor={'#56A3BF'}
-            centerComponent={{
-              text: 'Buzz App',
-              style: { color: '#fff', fontSize: 28 },
-            }}
-          />
+    return (
+      <SafeAreaProvider>
+        <Header
+          backgroundColor={'pink'}
+          centerComponent={{
+            text: 'Buzz App',
+            style: { color: 'black', fontSize: 28 },
+          }}
+        />
         <View style={styles.container}>
           <AppContainer />
         </View>
@@ -27,10 +28,11 @@ export default class App extends React.Component {
 }
 
 const TabNavigator = createBottomTabNavigator({
-  Insta: { screen: TransactionScreen },
-  Fb: { screen: SearchScreen },
+  Facebook: {screen: TransactionScreen},
+  Insta: {screen: SearchScreen},
 });
-const AppContainer = createAppContainer(TabNavigator);
+
+const AppContainer =  createAppContainer(TabNavigator);
 
 const styles = StyleSheet.create({
   container: {
@@ -38,6 +40,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-    padding:20,
+    padding: 20,
   },
 });
